@@ -41,6 +41,8 @@
 
 .promo__delivery-link {
     font-weight: 400;
+    position: relative;
+    cursor: pointer;
 }
 
 .header {
@@ -76,10 +78,39 @@
     font-size: 18px;
 }
 
-.header__information-instruction {
+.header__information-instruction a {
     font-weight: 700;
     line-height: 19px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+    position: relative;
 }
+
+
+
+.header__information-instruction a::after, .promo__delivery-link::after {
+    content: ''; /* Обязательное свойство для псевдо-элемента */
+    position: absolute;
+    width: 100%;
+    height: 1px; /* Высота линии подчёркивания */
+    left: 0;
+    bottom: -2px; /* Расположение под текстом */
+    background-color: #fff; /* Цвет линии, как у текста */
+    transition: transform 0.3s; /* Плавное изменение трансформации */
+    transform: scaleX(0); /* Изначально линия не показывается */
+    transform-origin: left; /* Начало трансформации (рост линии) слева */
+  }
+  
+  /* Стиль для ссылки при наведении */
+  .header__information-instruction a:hover::after, .promo__delivery-link:hover::after {
+    transform: scaleX(1); /* Линия растягивается на всю ширину */
+  }
+  
+  /* Стиль для ссылки при фокусе, полезно для доступности */
+  .header__information-instruction a:focus::after, .promo__delivery-link:focus::after {
+    transform: scaleX(1);
+  }
 
 .header__information-icon img {
     width: 20px;
@@ -108,16 +139,20 @@
     width: 274.55px;
     height: 49.17px;
     background-color: #fff;
-    color: rgb(0, 0, 0);
-    font-family: Helvetica;
-    font-size: 24px;
-    font-weight: 700;
     border: none;
     padding: 0;
     display: block;
     margin: 0 auto;
     /* margin-top: 260px; */
     /* margin-top: 240px; */
+}
+
+.header__button a {
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .benefits {

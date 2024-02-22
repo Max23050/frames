@@ -47,11 +47,14 @@
     min-height: 100vh;
     background: url(../img/header-image.jpeg) no-repeat 50%/cover;
     /* padding-bottom: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .header__content {
     padding: 0 150px;
-    padding-top: 54px;
+    /* padding-top: 54px; */
     color: white;
     display: flex;
     justify-content: space-between;
@@ -97,7 +100,7 @@
     opacity: 0.67;
     color: rgb(255, 255, 255);
     margin: 0 auto;
-    margin-top: 160px;
+    /* margin-top: 160px; */
     text-align: center;
 }
 
@@ -113,7 +116,7 @@
     padding: 0;
     display: block;
     margin: 0 auto;
-    margin-top: 260px;
+    /* margin-top: 260px; */
     /* margin-top: 240px; */
 }
 

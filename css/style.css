@@ -46,7 +46,7 @@
 }
 
 .header {
-    min-height: 100vh;
+    height: 85vh;
     background: url(../img/header-image.jpeg) no-repeat 50%/cover;
     /* padding-bottom: 20px; */
     display: flex;
@@ -55,6 +55,8 @@
 }
 
 .header__content {
+    flex: 0 1 auto;
+    margin-top: -5vh;
     padding: 0 150px;
     /* padding-top: 54px; */
     color: white;
@@ -62,12 +64,7 @@
     justify-content: space-between;
 }
 
-.header__logo {
-    font-family: Space-Grotesk;
-    font-size: 32.32px;
-    font-weight: 700;
-    line-height: 27px;
-}
+
 
 .header__information {
     display: flex;
@@ -124,6 +121,7 @@
 }
 
 .header__title {
+    flex: 0 1 auto;
     width: 626px;
     font-family: Helvetica;
     font-size: 77px;
@@ -136,6 +134,7 @@
 }
 
 .header__button {
+    flex: 0 1 auto;
     width: 274.55px;
     height: 49.17px;
     background-color: #fff;
@@ -156,7 +155,7 @@
 }
 
 .benefits {
-    padding-top: 66px;
+    padding-top: 40px;
 }
 
 .benefits__wrapper {

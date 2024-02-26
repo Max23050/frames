@@ -330,6 +330,7 @@
 }
 
 .development__wrapper-link {
+    cursor: pointer;
     color: rgb(255, 255, 255);
     font-family: Helvetica;
     font-size: 16px;
@@ -438,6 +439,7 @@
 
 
 #frames-info {
+    cursor: pointer;
     position: absolute;
     left: 80px;
     top: 370px;
@@ -508,6 +510,7 @@
 }
 
 .types__wrapper-link {
+    cursor: pointer;
     color: rgb(90, 90, 90);
     font-family: Helvetica;
     font-size: 16px;
@@ -538,7 +541,7 @@
     width: 100vw;
     align-items: center;
     justify-content: center;
-    display: flex;
+    display: none;
     z-index: 5;
     position: fixed;
     overflow: auto;
@@ -648,7 +651,6 @@
 
 #developing-studio {
     background: rgb(33, 33, 33);
-    display: block;
 }
 
 .developing-studio-logo {
@@ -656,6 +658,191 @@
     font-family: Helvetica;
     font-size: 26.7px;
     font-weight: 700;
+}
+
+.developing-studio-wrapper {
+    width: 786px;
+    margin: 0 auto;
+}
+
+.developing-studio-title {
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 34.93px;
+    font-weight: 400;
+    margin-top: 80px;
+}
+
+.developing-studio-img {
+    margin-top: 50px;
+}
+
+.developing-studio-img img {
+    width: 100%;
+}
+
+.developing-studio-descr {
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 34.93px;
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+.developing-studio-options {
+    margin-top: 75px;
+    border-radius: 6.44px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+}
+
+.developing-studio-options-content {
+    padding: 35px 0 25px 40px;
+    position: relative;
+}
+
+.developing-studio-options-title {
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 22.98px;
+    font-weight: 400;
+}
+
+.developing-studio-options-descr {
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 16.55px;
+    font-weight: 400;
+    margin-top: 65px;
+    position: absolute;
+    bottom: 25px;
+}
+
+.developing-studio-packeta {
+    margin-top: 65px;   
+    padding: 30px 0 65px 30px;
+    border-radius: 6.44px;
+    background: rgb(171, 46, 25);
+    position: relative;
+}
+
+.developing-studio-packeta-descr {
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.developing-studio-packeta-link {
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    top: 115px;
+    right: 50px;
+}
+
+.developing-studio-text {
+    margin-top: 75px;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 22.98px;
+    font-weight: 400;
+}
+
+#second-text {
+    margin-top: 30px;
+}
+
+#goal {
+    border-radius: 3.6px;
+    background: rgb(246, 246, 247);
+}
+
+.goal-wrapper {
+    width: 787px;
+    margin: 0 auto;
+}
+
+.goal-title {
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
+    font-size: 34.93px;
+    font-weight: 400;
+}
+
+.goal-descr {
+    margin-top: 60px;
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.goal-phone, .goal-phone a {
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 60px;
+}
+
+.goal-phone a {
+    text-decoration: none;
+}
+
+.goal-img {
+    margin-top: 80px;
+}
+
+.modal-films {
+    border-radius: 3.6px;
+    background: rgb(255, 255, 255);
+}
+
+.films-wrapper {
+    width: 787px;
+    margin: 0 auto;
+}
+
+.films-title {
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
+    font-size: 34.93px;
+    font-weight: 400;
+}
+
+.films-elem {
+    width: 315.37px;
+    height: 416.14px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.films-descr {
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: 80px;
+}
+
+.films-example {
+    color: rgb(0, 0, 0);
+    font-family: Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 55px;
+}
+
+.films-images {
+    margin-top: 45px;
+}
+
+.films-img {
+    margin-bottom: 25px;
 }
 
 /* @media (max-width: 1799px) {

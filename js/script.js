@@ -38,6 +38,12 @@ document.addEventListener("DOMContentLoaded", function() {
             scrollBlock.style.top = '-80px';
         }
     })
+
+    document.querySelectorAll('.cart-button').forEach(button => {
+        button.addEventListener('click', function() {
+            window.location.href = 'cart.html';
+        })
+    })
 })
 
 

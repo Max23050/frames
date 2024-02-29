@@ -13,7 +13,7 @@
     position: fixed;
     top: -80px;
     right: 0;
-    height: 80px;
+    height: 55px;
     width: 100%;
     z-index: 5000;
     background-color:rgb(0, 0, 0);
@@ -41,14 +41,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.scroll-btn a {
     font-size: 16px;
     color: rgb(0, 0, 0);
     font-family: Helvetica;
     font-weight: 700;
-    text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -170,16 +167,12 @@
     display: block;
     margin: 0 auto;
     border-radius: 6.76px;
-    /* margin-top: 260px; */
-    /* margin-top: 240px; */
-}
-
-.header__button a {
     font-size: 21px;
     color: rgb(0, 0, 0);
     font-family: Helvetica;
     font-weight: 700;
-    text-decoration: none;
+    /* margin-top: 260px; */
+    /* margin-top: 240px; */
 }
 
 .benefits {
@@ -307,17 +300,15 @@
 .films__link {
     text-align: center;
     margin-top: 80px;
-}
-
-.films__link a {
     color: rgb(90, 90, 90);
     font-family: Helvetica;
     font-size: 16px;
     font-weight: 700;
-    text-decoration: none;
+    cursor: pointer;
 }
 
-.films__link a:hover {
+
+.films__link:hover {
     text-decoration: underline;
 }
 
@@ -347,17 +338,15 @@
 .mission__descr-link {
     position: absolute;
     bottom: 54px;
-}
-
-.mission__descr-link a {
     color: rgb(21, 21, 21);
     font-family: Helvetica;
     font-size: 18px;
     font-weight: 700;
-    text-decoration: none;
+    cursor: pointer;
 }
 
-.mission__descr-link a:hover {
+
+.mission__descr-link:hover {
     text-decoration: underline;
 }
 

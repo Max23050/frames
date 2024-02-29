@@ -13,7 +13,10 @@
 <body>
     <div class="modal-container">
         <div class="modal" id="eco">
-            <span class="close-button">&times;</span>
+            <!-- <span class="close-button">&times;</span> -->
+            <div class="close-icon">
+                <img src="icons/krizek.svg" alt="close">
+            </div>
             <div class="eco-wrapper">
                 <div class="eco-title">
                     Aby film samotný přežil, musí být celá služba <br>
@@ -159,10 +162,11 @@
         <div class="modal" id="developing-studio">
             <span class="close-button" id="black-close">&times;</span>
             <div class="developing-studio-wrapper">
-                <div class="developing-studio-logo">
+                <!-- <div class="developing-studio-logo">
                     Developing <br>
                      Studio
-                </div>
+                </div> -->
+                <img src="icons/developingstudio.svg" alt="dev-logo" class="developing-studio-logo-img">
                 <div class="developing-studio-title">
                     Tvoje filmy vyvoláme ručně a s láskou ke každýmu <br>
                     políčku. 
@@ -213,7 +217,10 @@
             </div>
         </div>
         <div class="modal" id="goal">
-            <span class="close-button">&times;</span>
+            <!-- <span class="close-button">&times;</span> -->
+            <div class="close-icon">
+                <img src="icons/krizek.svg" alt="close">
+            </div>
             <div class="goal-wrapper">
                 <div class="goal-title">
                     Naším cílem je aplikovat hodnoty mojí generace <br>
@@ -232,7 +239,10 @@
             </div>
         </div>
         <div class="modal modal-films" id="blue-film">
-            <span class="close-button">&times;</span>
+            <!-- <span class="close-button">&times;</span> -->
+            <div class="close-icon">
+                <img src="icons/krizek.svg" alt="close">
+            </div>
             <div class="films-wrapper">
                 <div class="films-title">
                     Vyfoť odstíny, barvy a objekty s nádechem zlatého odstínů.
@@ -255,7 +265,10 @@
             </div>
         </div>
         <div class="modal modal-films" id="yellow-film">
-            <span class="close-button">&times;</span>
+            <!-- <span class="close-button">&times;</span> -->
+            <div class="close-icon">
+                <img src="icons/krizek.svg" alt="close">
+            </div>
             <div class="films-wrapper">
                 <div class="films-title">
                     Nejdostupnější barevný film ve městě
@@ -279,7 +292,10 @@
             </div>
         </div>
         <div class="modal modal-films" id="gray-film">
-            <span class="close-button">&times;</span>
+            <!-- <span class="close-button">&times;</span> -->
+            <div class="close-icon">
+                <img src="icons/krizek.svg" alt="close">
+            </div>
             <div class="films-wrapper">
                 <div class="films-title">
                     Vyfoť odstíny, barvy a objekty s nádechem zlatého odstínů.
@@ -302,7 +318,10 @@
             </div>
         </div>
         <div class="modal" id="instruction">
-            <span class="close-button">&times;</span>
+            <!-- <span class="close-button">&times;</span> -->
+            <div class="close-icon">
+                <img src="icons/krizek.svg" alt="close">
+            </div>
             <div class="instruction-wrapper">
                 <div class="instruction-title">
                     Celý to funguje fakt Jednoduše! Ušetříš spoustu času ještě <br>
@@ -387,14 +406,31 @@
             </div>
         </div>
         <div class="modal" id=quality>
-            <span class="close-button">&times;</span>
+            <!-- <span class="close-button">&times;</span> -->
+            <div class="close-icon">
+                <img src="icons/krizek.svg" alt="close">
+            </div>
             <div class="quality-wrapper">
                 <div class="quality-title">Vyfoť fotky v kvalitě těch nejlepších filmů z Hollywoodu</div>
             </div>
-            <img src="img/quality-pop1.jpg" alt="quality-pop1" class="quality-img">
+            <img src="img/quality-pop1.jpg" id="center-img" alt="quality-pop1" class="quality-img">
             <img src="img/quality-pop2.jpg" alt="quality-pop2" class="quality-img">
             <img src="img/quality-pop2.jpg" alt="quality-pop3" class="quality-img">
             <img src="img/quality-pop2.jpg" alt="quality-pop4" class="quality-img">
+        </div>
+    </div>
+    <div id="scrollBlock">
+        <div class="scroll-content">
+            <div class="scroll-text promo__delivery-text">
+                <div class="scroll-icon promo__delivery-icon"><img src="icons/truck-icon.svg" alt="truck"></div>
+                Doprava filmu k tobě a zpět na vyvolání je ZDARMA
+            </div>
+            <div class="scroll-link promo__delivery-link" data-modal-type="#instruction">
+                Jak to funguje?
+            </div>
+            <div class="scroll-btn">
+                <a href="#">Vybrat filmy</a>
+            </div>
         </div>
     </div>
     <section class="promo">
@@ -404,7 +440,7 @@
                     <div class="promo__delivery-icon"><img src="icons/truck-icon.svg" alt="truck"></div>
                     Doprava filmu k tobě a zpět na vyvolání je ZDARMA
                 </div>
-                <div class="promo__delivery-link" data-modal-type="#developing-studio">
+                <div class="promo__delivery-link" data-modal-type="#instruction">
                     více informací
                 </div>
             </div>
@@ -416,7 +452,7 @@
                 <img src="img/FRAMESlogo.svg" alt="logo">
             </div>
             <div class="header__information">
-                <div class="header__information-instruction" data-modal-type="#developing-studio">
+                <div class="header__information-instruction" data-modal-type="#instruction">
                     Jak to funguje?
                 </div>
                 <div class="header__information-icon">
@@ -458,7 +494,7 @@
                         cartrige a papírů pro správu volání
                     </div>
                 </div>
-                <div class="benefits__item">
+                <div class="benefits__item" data-modal-type="#quality">
                     <div class="benefits__item-title">Užívej si lepší a <br>
                         kvalitnější fotky
                     </div>
@@ -517,11 +553,12 @@
 
     <section class="development">
         <div class="container">
-            <div class="development__wrapper">
-                <div class="development__wrapper-title">
+            <div class="development__wrapper" data-modal-type="#developing-studio">
+                <!-- <div class="development__wrapper-title">
                     Developing <br>
                     Studio
-                </div>
+                </div> -->
+                <img src="icons/developingstudio.svg" alt="dev-logo" class="development__logo">
                 <div class="development__wrapper-descr">
                     Film nám na vyvolání <br>
                     pošleš zdarma přes Zásilkovnu
@@ -535,7 +572,7 @@
 
     <section class="eco">
         <div class="container">
-            <div class="eco__wrapper">
+            <div class="eco__wrapper" data-modal-type="#eco">
                 <div class="eco__wrapper-title">
                     Tolik plastů a papírů spolu ušetříme za 1 <br>
                     rok focení*

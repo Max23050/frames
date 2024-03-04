@@ -4,8 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-reboot.min.css" integrity="sha512-ZHQv/ue+hZQ+Jd+JKhxic17TUraZ9UwS6G7RcwSrQEE9j/m/AGRwj1OmYrkP43H0B/Wf0pg3hfbHCMAS6SGHOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Cart</h1>
+    <div class="modal-container">
+        <div class="modal" id="instruction">
+            <!-- <span class="close-button">&times;</span> -->
+            <div class="close-icon">
+                <img src="icons/krizek.svg" alt="close">
+            </div>
+            <div class="instruction-wrapper">
+                <div class="instruction-title">
+                    Celý to funguje fakt Jednoduše! Ušetříš spoustu času ještě <br>
+                    si to víc užiješ, slibujeme.
+                </div>
+                <div class="instruction-block">
+                    <div class="instruction-elem">
+                        <div class="instruction-content">
+                            <div class="instruction-text">
+                                <div class="instruction-number">1.</div>
+                                <div class="instruction-number-text">
+                                    Objednané filmy ti <br>
+                                    zdarma pošleme
+                                </div>
+                            </div>
+                            <div class="instruction-descr">
+                                Filmy ti zdarma pošleme Českou poštou do <br>
+                                schránky nebo Zásilkovnou na výdejní místo.
+                            </div>
+                        </div>
+                        <img src="img/instruction-pop1.jpg" alt="instruction-pop1" class="instuction-img">
+                    </div>
+                    <div class="instruction-elem">
+                        <div class="instruction-content">
+                            <div class="instruction-text">
+                                <div class="instruction-number">2.</div>
+                                <div class="instruction-number-text">
+                                    Vyvolání a sken filmu koupíš <br>
+                                    jednoduše přes QR kód
+                                </div>
+                            </div>
+                            <div class="instruction-descr">
+                                Na každém filmu je QR kód a číslo filmu. Kód <br>
+                                načteš, vyplníš údaje, číslo filmu a vyvolání s <br>
+                                premium skenem si koupíš.
+                            </div>
+                        </div>
+                        <img src="img/instruction-pop2.jpg" alt="instruction-pop2" class="instuction-img">
+                    </div>
+                    <div class="instruction-elem">
+                        <div class="instruction-content">
+                            <div class="instruction-text">
+                                <div class="instruction-number">3.</div>
+                                <div class="instruction-number-text">
+                                    Nafocený film doneseš na <br>
+                                    pobočku Zásilkovny
+                                </div>
+                            </div>
+                            <div class="instruction-descr">
+                                Nafocený film vložíš zpátky do <br> 
+                                znovuzavíratelného obalu, zaneseš ho na <br>
+                                pobočku zásilkovny a s kódem, který ti pošleme <br>
+                                na email, nám ho zdarma pošleš.
+                            </div>
+                        </div>
+                        <img src="img/instruction-pop3.jpeg" alt="instruction-pop3" class="instuction-img">
+                    </div>
+                    <div class="instruction-elem">
+                        <div class="instruction-content">
+                            <div class="instruction-text">
+                                <div class="instruction-number">4.</div>
+                                <div class="instruction-number-text">
+                                    Tvůj film vyvoláme a <br>
+                                    naskenujeme
+                                </div>
+                            </div>
+                            <div class="instruction-descr">
+                                Film nám dojde do našeho developing studia, <br>
+                                my ho vyvoláme a skvěle naskenujeme a fotky ti <br>
+                                pošleme. Negativy ti vrátíme podle tak, jak sis to <br>
+                                při nákupu vyvolání vybral.
+                            </div>
+                        </div>
+                        <img src="img/instruction-pop4.jpeg" alt="instruction-pop4" class="instuction-img">
+                    </div>
+                </div>
+                <div class="instruction-addition">
+                    Stojím před osamocenou břízou uprostřed louky. Z brašny si vyndám Leicu M4. Les spí, panuje klid. Na tělo <br>
+                    nandám Summicron 35mm zacloněný na f11 abych scénu zachytil s úctou ke vzdáleným siluetám Orlických <br>
+                    hor. Přiložím hledáček k oku. 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-block">
+        <div class="fixed-block__content">
+            <div class="fixed-block__promo">Slevový kód</div>
+            <div class="fixed-block__order">
+                <div class="fixed-block__price">269 Kč</div>
+                <div class="fixed__block-button">Objednat</div>
+            </div>
+        </div>
+    </div>
+    <section class="header-cart">
+        <div class="header__content" id="cart-header-content">
+            <div class="header__logo">
+                <img src="img/FRAMESlogo-black.svg" alt="logo">
+            </div>
+            <div class="header__home">
+                <a href="index.html">
+                    <img src="icons/house.svg" alt="house">
+                </a>
+            </div>
+            <div class="header__information header-cart__information">
+                <div class="header__information-instruction header-cart__information-instruction" data-modal-type="#instruction">
+                    Jak to funguje?
+                </div>
+                <div class="header__information-icon">
+                    <a href="#">
+                        <img src="icons/inst-icon-black.svg" alt="icon">
+                    </a>
+                </div>
+                <div class="header__information-lang">
+                    English
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <div class="content__cart">
+                <div class="content__cart-title">
+                    Tvůj košík
+                </div>
+                <div class="content__cart-block"></div>
+            </div>
+            <div class="content__films"></div>
+        </div>
+    </section>
+    <script src="js/cart.js"></script>
 </body>
 </html>

@@ -27,6 +27,34 @@ document.addEventListener("DOMContentLoaded", function() {
             closeModal(document.querySelector('.modal:not([style*="display: none"])'));
         }
     })
+
+    const selectors = document.querySelectorAll('.content__films-counter');
+  
+    selectors.forEach((selector) => {
+        const minusButton = selector.querySelector('.minus');
+        const plusButton = selector.querySelector('.plus');
+        const quantityDisplay = selector.querySelector('.quantity');
+
+        let quantity = 0;
+        updateDisplay();
+
+        minusButton.addEventListener('click', () => {
+        if (quantity > 0) {
+            quantity--;
+            updateDisplay();
+        }
+        });
+
+        plusButton.addEventListener('click', () => {
+        quantity++;
+        updateDisplay();
+        });
+
+        function updateDisplay() {
+        quantityDisplay.textContent = quantity;
+        minusButton.classList.toggle('disabled-btn', quantity === 0);
+        }
+    });
 })
 
 

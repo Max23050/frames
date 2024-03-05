@@ -1156,6 +1156,161 @@
     font-weight: 400;
 }
 
+.content__films-elem {
+    width: 414.04px;
+    height: 204.08px;
+    border-radius: 3.38px;
+    background: rgb(246, 246, 246);
+    margin-bottom: 15px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.content__films-counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 155px;
+    margin-top: 25px;
+}
+
+.content__films-text {
+    color: rgb(57, 57, 57);
+    font-family: Helvetica;
+    font-size: 18.24px;
+    font-weight: 700;
+}
+
+.plus {
+    width: 37.69px;
+    height: 37.69px;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    font-family: Space-Grotesk;
+    font-size: 29.32px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.minus {
+    width: 37.69px;
+    height: 37.69px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.disabled-btn {
+    background: rgb(255, 255, 255);
+    opacity: 0.32;
+}
+
+.minus-elem {
+    width: 12.56px;
+    height: 4.19px;
+    background: rgb(0, 0, 0);
+}
+
+.quantity {
+    color: rgb(57, 57, 57);
+    font-family: Helvetica;
+    font-size: 16.63px;
+    font-weight: 700;
+}
+
+.content__films-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    width: 170px;
+}
+
+.content__films-price {
+    color: rgb(57, 57, 57);
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.content__films-btn {
+    width: 80.38px;
+    height: 29.62px;
+    border-radius: 3.38px;
+    background: rgb(3, 74, 184);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 236, 236);
+    font-family: Helvetica;
+    font-size: 12.12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#magic-color-btn {
+    background: rgb(231, 154, 27);
+}
+
+#monochrom-btn {
+    background: rgb(127, 127, 127);
+}
+
+.content__films-best {
+    width: 110px;
+    height: 26.23px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 11.1px;
+    font-weight: 500;
+    text-transform: lowercase;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.content__films-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3.38px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 15.36px;
+    font-weight: 700;
+    width: 160.77px;
+    height: 36.38px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.cross-out-price {
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.red-price {
+    color: rgb(255, 33, 33);
+}
+
 /* @media (max-width: 1799px) {
     .promo__delivery-content {
         font-size: 14px;

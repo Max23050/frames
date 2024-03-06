@@ -1033,7 +1033,7 @@
     display: flex;
     align-items: center;
     padding: 0 170px 0 195px;
-    z-index: 10000;
+    z-index: 1000;
 }
 
 .fixed-block__content {
@@ -1175,7 +1175,7 @@
     justify-content: space-between;
     align-items: center;
     width: 155px;
-    margin-top: 25px;
+    margin-top: 23px;
 }
 
 .content__films-text {
@@ -1235,8 +1235,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 26px;
     width: 170px;
+}
+
+.content__films-img img {
+    height: 143px;
 }
 
 .content__films-price {

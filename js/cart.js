@@ -28,6 +28,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 
+    const totalPriceDisplay = document.querySelector('.fixed-block__price');
+    let totalPrice = 0;
+
+
     const selectors = document.querySelectorAll('.content__films-counter');
   
     selectors.forEach((selector) => {
@@ -39,21 +43,22 @@ document.addEventListener("DOMContentLoaded", function() {
         updateDisplay();
 
         minusButton.addEventListener('click', () => {
-        if (quantity > 0) {
-            quantity--;
-            updateDisplay();
-        }
+            if (quantity > 0) {
+                quantity--;
+                updateDisplay();
+            }
         });
 
         plusButton.addEventListener('click', () => {
-        quantity++;
-        updateDisplay();
+            quantity++;
+            updateDisplay();
         });
 
         function updateDisplay() {
-        quantityDisplay.textContent = quantity;
-        minusButton.classList.toggle('disabled-btn', quantity === 0);
+            quantityDisplay.textContent = quantity;
+            minusButton.classList.toggle('disabled', quantity === 0);
         }
+        
     });
 })
 

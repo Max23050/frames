@@ -431,7 +431,7 @@
         <div class="fixed-block__content">
             <div class="fixed-block__promo">Slevový kód</div>
             <div class="fixed-block__order">
-                <div class="fixed-block__price">0 Kč</div>
+                <div class="fixed-block__price"><span id="total-price">0</span> Kč</div>
                 <div class="fixed__block-button">Objednat</div>
             </div>
         </div>
@@ -469,6 +469,7 @@
                         Tvůj košík
                     </div>
                     <div class="content__cart-block">
+                        <div class="cart-items"></div>
                         <div class="content__cart-information">
                             <div class="content__cart-elem">
                                 <div class="content__cart-text">Ušetříš 396 Kč</div>
@@ -528,7 +529,7 @@
                         <div class="content__films-elem">
                             <div class="content__films-best">NEJPRODÁVANŠJŠÍ</div>
                             <div class="content__films-img">
-                                <img src="img/color+color-cart.svg" alt="color+color">
+                                <img src="img/ color-cart-test.svg" alt="color+color">
                             </div>
                             <div class="content__films-content">
                                 <div class="content__films-text">Color + Color</div>
@@ -537,7 +538,7 @@
                                 </div>
                                 <div class="content__films-info">
                                     <div class="content__films-price">
-                                        <span class="cross-out-price">598 Kč</span>   <span class="red-price">569 Kč</span>
+                                        <span class="cross-out-price">598 Kč</span>   <span class="red-price" data-price="569">569 Kč</span>
                                     </div>
                                 </div>
                             </div>
@@ -573,7 +574,7 @@
                                 <div class="content__films-info">
                                     <div class="content__films-price">
                                         <span class="cross-out-price">478 Kč</span>   
-                                        <span class="red-price">459 Kč</span>
+                                        <span class="red-price" data-price="459">459 Kč</span>
                                     </div>
                                 </div>
                             </div>
@@ -593,7 +594,7 @@
                                 </div>
                                 <div class="content__films-info">
                                     <div class="content__films-btn" id="monochrom-btn" data-modal-type="#gray-film">o filmu</div>
-                                    <div class="content__films-price" data-price="299">299 Kč</div>
+                                    <div class="content__films-price" data-price="179">179 Kč</div>
                                 </div>
                             </div>
                         </div>
@@ -611,7 +612,7 @@
                                     <div class="plus">+</div>
                                 </div>
                                 <div class="content__films-info">
-                                    <div class="content__films-price">
+                                    <div class="content__films-price" data-price="349">
                                         <span class="cross-out-price">358 Kč</span>   
                                         <span class="red-price">349 Kč</span>
                                     </div>

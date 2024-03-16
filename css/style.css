@@ -1087,13 +1087,28 @@
 .content__wrapper {
     display: flex;
     justify-content: space-between;
+    height: 100vh;
+}
+
+.content__cart {
+    height: 70%;
+}
+
+.content__films {
+    height: 100%;
+    overflow-y: auto; 
 }
 
 .content__cart-block {
     width: 870px;
-    height: 680px;
+    height: 100%;
     border-radius: 3.38px;
     background: rgb(246, 246, 246);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto; /* Добавляем горизонтальный скролл */
+    white-space: nowrap;
 }
 
 .content__cart-title, .content__films-title {
@@ -1104,9 +1119,6 @@
     margin-bottom: 15px;
 }
 
-.content__cart-block {
-    position: relative;
-}
 
 .content__cart-information {
     display: flex;
@@ -1157,12 +1169,12 @@
 }
 
 .content__films-elem {
-    width: 414.04px;
-    height: 204.08px;
+    width: 469px;
+    height: 233px;
     border-radius: 3.38px;
     background: rgb(246, 246, 246);
-    margin-bottom: 15px;
-    padding-top: 40px;
+    margin-bottom: 30px;
+    padding-top: 30px;
     padding-left: 30px;
     padding-right: 50px;
     display: flex;
@@ -1170,19 +1182,11 @@
     position: relative;
 }
 
-.content__films-counter {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 155px;
-    margin-top: 23px;
-}
-
 .content__films-text {
     color: rgb(57, 57, 57);
     font-family: Helvetica;
-    font-size: 18.24px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .plus {
@@ -1231,39 +1235,43 @@
     font-weight: 700;
 }
 
+
 .content__films-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 26px;
-    width: 170px;
+    width: 209px;
 }
 
 .content__films-img img {
-    height: 143px;
+    height: 178px;
 }
 
 .content__films-price {
     color: rgb(57, 57, 57);
     font-family: Helvetica;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 .content__films-btn {
-    width: 80.38px;
-    height: 29.62px;
-    border-radius: 3.38px;
-    background: rgb(3, 74, 184);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 236, 236);
     font-family: Helvetica;
-    font-size: 12.12px;
-    font-weight: 700;
+    color: rgb(121, 121, 121);
+    font-size: 16.2px;
+    font-weight: 500;
     cursor: pointer;
 }
+
+.content__films-btn:hover {
+    text-decoration: underline;
+}
+
+.content__films-info:nth-child(2n) {
+    margin-top: 104px;
+    align-items: end;
+}
+
+
 
 #magic-color-btn {
     background: rgb(231, 154, 27);
@@ -1274,56 +1282,97 @@
 }
 
 .content__films-best {
-    width: 110px;
-    height: 26.23px;
-    background: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: Helvetica;
-    font-size: 11.1px;
+    font-size: 13.84px;
     font-weight: 500;
     text-transform: lowercase;
-    position: absolute;
-    top: 0;
-    right: 10px;
+    border: 1.12px solid rgb(0, 0, 0);
+    border-radius: 3.36px;
+    width: 126.5px;
+    height: 27.99px;    
+    margin-top: 15px;
+}
+
+#best-info {
+    margin-top: 53px;
 }
 
 .content__films-add {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 3.38px;
+    border-radius: 4.22px;
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     font-family: Helvetica;
-    font-size: 15.36px;
-    font-weight: 700;
-    width: 160.77px;
-    height: 36.38px;
-    margin-top: 25px;
+    width: 119px;
+    height: 39px;
+    font-size: 17px;
+    font-weight: 500;
     cursor: pointer;
 }
 
 .cross-out-price {
     text-decoration: line-through;
+    color: rgb(179, 179, 179);
+}
+
+.small-price {
+    color: rgb(179, 179, 179);
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.cart-items {
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cart-item {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+}
+
+.cart-item-image {
+    display: block;
+    height: 360px;
+    width: auto;
+}
+
+.cart-item-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.cart-item-name {
+    color: rgb(57, 57, 57);
+    font-family: Helvetica;
+    font-size: 17px;
+    font-weight: 500;
     margin-right: 5px;
 }
 
-.red-price {
-    color: rgb(255, 33, 33);
+.cart-item-remove {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333; /* Адаптируйте цвет кнопки по необходимости */
+    font-size: 16px;
+    z-index: 100;
 }
 
-.cart-items {
-    position: relative; /* Делаем контейнер относительно позиционированным */
-    /* Укажите достаточную высоту и ширину для вашего контейнера, чтобы вместить изображения */
-}
-.cart-item-image {
-    position: absolute;
-    height: 360px;
-    /* Убедитесь, что высота не фиксирована, чтобы сохранить пропорции изображений */
-}
 
 /* @media (max-width: 1799px) {
     .promo__delivery-content {

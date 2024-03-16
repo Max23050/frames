@@ -28,102 +28,80 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 
-    const selectors = document.querySelectorAll('.content__films-counter');
-    let totalPrice = 0;
-    const cartItems = document.querySelector('.cart-items');
-
-    function addToCart(imageSrc) {
+    function addToCart(imageSrc, productName, price) {
+        const cartItemsContainer = document.querySelector('.cart-items');
+    
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+        cartItem.dataset.price = price;
+        const totalItems = cartItemsContainer.children.length;
+        cartItem.style.left = `${totalItems * 180}px`; // смещение каждого нового элемента
+    
         const img = document.createElement('img');
-        img.onload = function() {
-            // Считаем смещение на основе ширины загруженного изображения и количества уже добавленных изображений
-            const totalOffset = Array.from(cartItems.querySelectorAll('img')).reduce((offset, img) => offset + img.width / 2, 0);
-            img.style.left = `${totalOffset}px`; // Устанавливаем смещение для текущего изображения
-            cartItems.appendChild(img); // Добавляем изображение в контейнер только после загрузки и расчета смещения
-        };
         img.src = imageSrc;
         img.classList.add('cart-item-image');
-    }
+    
+        const details = document.createElement('div');
+        details.classList.add('cart-item-details');
+    
+        const name = document.createElement('div');
+        name.textContent = productName;
+        name.classList.add('cart-item-name');
+    
+        const removeBtn = document.createElement('button');
+        removeBtn.classList.add('cart-item-remove');
+        removeBtn.onclick = function() {
+            cartItem.remove();
+            // Обновляем смещение оставшихся элементов
+            updateItemsPosition();
+            updateTotalPrice(); // Предполагается, что у вас есть функция для обновления общей цены
+        };
 
-    function removeFromCart(imageSrc) {
-        const images = Array.from(cartItems.querySelectorAll('img'));
-        for (let i = images.length - 1; i >= 0; i--) {
-            if (images[i].src.includes(imageSrc)) {
-                cartItems.removeChild(images[i]); // Удаляем найденное изображение
-                // Пересчитываем и обновляем смещение для оставшихся изображений
-                updateImagesPosition();
-                break; // Выходим из цикла после удаления изображения
-            }
-        }
+        const icon = document.createElement('img');
+        icon.src = 'icons/krizek-cart.svg';
+        icon.alt = 'remove-krizek';
+        removeBtn.appendChild(icon);
+    
+        details.appendChild(name);
+        details.appendChild(removeBtn);
+        cartItem.appendChild(img);
+        cartItem.appendChild(details);
+        
+        cartItemsContainer.appendChild(cartItem);
+
+        updateTotalPrice();
     }
     
-    function updateImagesPosition() {
-        const images = cartItems.querySelectorAll('img');
-        let totalOffset = 0; // Начальное смещение
-    
-        images.forEach(img => {
-            img.style.left = `${totalOffset}px`; // Устанавливаем новое смещение для изображения
-            totalOffset += img.width / 2; // Увеличиваем общее смещение на половину ширины текущего изображения
+    function updateItemsPosition() {
+        const cartItems = document.querySelectorAll('.cart-items .cart-item');
+        cartItems.forEach((item, index) => {
+            item.style.left = `${index * 180}px`;
         });
     }
     
-    selectors.forEach((selector) => {
-        const minusButton = selector.querySelector('.minus');
-        const plusButton = selector.querySelector('.plus');
-        const quantityDisplay = selector.querySelector('.quantity');
-        const price = parseInt(selector.closest('.content__films-elem').querySelector('.content__films-price').dataset.price);
-
-        let quantity = 0;
-        updateDisplay();
-
-        const imageSrc = selector.closest('.content__films-elem').querySelector('.content__films-img img').src;
-
-        minusButton.addEventListener('click', () => {
-            if (quantity > 0) {
-                quantity--;
-                totalPrice -= price;
-                updateDisplay();
-                updateTotalPrice();
-                removeFromCart(imageSrc);
-            }
-        });
-
-        plusButton.addEventListener('click', () => {
-            quantity++;
-            totalPrice += price;
-            updateDisplay();
-            updateTotalPrice();
-            addToCart(imageSrc);
-        });
-
-        function updateDisplay() {
-            quantityDisplay.textContent = quantity;
-            minusButton.classList.toggle('disabled-btn', quantity === 0);
-        }
-    });
 
     const addButtons = document.querySelectorAll('.content__films-add');
     
     addButtons.forEach((addButton) => {
         addButton.addEventListener('click', function() {
-            const imageSrc = addButton.closest('.content__films-elem').querySelector('.content__films-img img').src;
-            const isAdded = addButton.textContent.trim() === 'Odebrat';
-            const price = parseInt(addButton.closest('.content__films-elem').querySelector('.red-price').dataset.price);
+            const productElem = addButton.closest('.content__films-elem');
+            const imageSrc = productElem.querySelector('.content__films-img img').src;
+            const productName = productElem.querySelector('.content__films-text').textContent;
 
-            if (isAdded) {
-                totalPrice -= price;
-                addButton.textContent = 'Přidat';
-                removeFromCart(imageSrc);
-            } else {
-                totalPrice += price;
-                addButton.textContent = 'Odebrat';
-                addToCart(imageSrc);
-            }
-            updateTotalPrice();
+            const price = productElem.querySelector('.content__films-price').getAttribute('data-price');
+            
+            addToCart(imageSrc, productName, price);
         });
     });
 
     function updateTotalPrice() {
-        document.getElementById('total-price').textContent = totalPrice;
+        let totalPrice = 0;
+        const cartItems = document.querySelectorAll('.cart-items .cart-item');
+        cartItems.forEach(item => {
+            const price = parseInt(item.dataset.price, 10); // Получаем цену из data-price
+            totalPrice += price;
+        });
+        document.querySelector('#total-price').textContent = `${totalPrice}`; // Обновляем текст общей стоимости
     }
 })
 

@@ -1100,13 +1100,13 @@
 }
 
 .content__cart-block {
+    position: relative;
     width: 870px;
     height: 100%;
     border-radius: 3.38px;
     background: rgb(246, 246, 246);
     display: flex;
     align-items: center;
-    justify-content: center;
     overflow-x: auto; /* Добавляем горизонтальный скролл */
     white-space: nowrap;
 }

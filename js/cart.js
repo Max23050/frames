@@ -103,6 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
         document.querySelector('#total-price').textContent = `${totalPrice}`; // Обновляем текст общей стоимости
     }
+
 })
 
 

@@ -22,6 +22,10 @@
     transition: top 0.5s ease-in-out;
 }
 
+.scroll-text {
+    font-size: 13.5px;
+}
+
 .scroll-content {
     width: 1242px;
     margin: 0 auto;
@@ -107,6 +111,10 @@
     justify-content: space-between;
 }
 
+.logo-small img {
+    width: 120px;
+}
+
 
 
 .header__information {
@@ -145,6 +153,7 @@
 }
 
 .header__title {
+    line-height: 62px;
     font-size: 66px;
     width: 518px;
     flex: 0 1 auto;
@@ -954,7 +963,7 @@
 }
 
 .instruction-content {
-    padding: 40px 0 60px 40px;
+    padding: 40px 0 35px 40px;
 }
 
 .instruction-text {
@@ -970,11 +979,16 @@
     font-family: Helvetica;
     font-size: 16px;
     font-weight: 400;
-    margin-top: 90px;
+    margin-top: 116px;
+    line-height: 22px;
 }
 
 .instruction-number {
     margin-right: 10px;
+}
+
+.instruction-number-text {
+    line-height: 27px;
 }
 
 .instruction-addition {
@@ -1053,21 +1067,21 @@
 .fixed-block__promo {
     color: rgb(255, 255, 255);
     font-family: Helvetica;
-    font-size: 19.46px;
+    font-size: 16px;
     font-weight: 400;
 }
 
 .fixed-block__price {
     color: rgb(255, 255, 255);
     font-family: Helvetica;
-    font-size: 20.31px;
+    font-size: 17px;
     font-weight: 700;
 }
 
 .fixed__block-button {
     color: rgb(0, 0, 0);
     font-family: Helvetica;
-    font-size: 20.31px;
+    font-size: 18px;
     font-weight: 700;
     width: 181.08px;
     height: 42.31px;
@@ -1080,7 +1094,7 @@
 }
 
 .content {
-    padding-top: 45px;
+    padding-top: 35px;
     padding-bottom: 80px;
 }
 
@@ -1141,6 +1155,10 @@
     font-size: 13.54px;
     font-weight: 400;
     cursor: pointer;
+}
+
+.content__delivery-icon img {
+    width: 34px;
 }
 
 .content__cart-link:hover, .content__delivery-link:hover {

@@ -32,10 +32,15 @@ document.addEventListener("DOMContentLoaded", function() {
         const cartItemsContainer = document.querySelector('.cart-items');
     
         const cartItem = document.createElement('div');
-        cartItem.classList.add('cart-item');
+        cartItem.classList.add('cart-item', 'fade-in');
         cartItem.dataset.price = price;
         const totalItems = cartItemsContainer.children.length;
-        cartItem.style.left = `${totalItems * 180}px`; // смещение каждого нового элемента
+        if (totalItems === 0) {
+            cartItem.style.left = '50px'; // Смещение для первого элемента
+        } else {
+            // Для второго и последующих элементов смещение рассчитывается иначе
+            cartItem.style.left = `${50 + 180 * totalItems}px`;
+        } 
     
         const img = document.createElement('img');
         img.src = imageSrc;
@@ -43,18 +48,29 @@ document.addEventListener("DOMContentLoaded", function() {
     
         const details = document.createElement('div');
         details.classList.add('cart-item-details');
+        const priceDetails = document.createElement('div');
+        details.classList.add('cart-item-price-details');
     
         const name = document.createElement('div');
         name.textContent = productName;
         name.classList.add('cart-item-name');
+
+        const elPrice = document.createElement('div')
+        elPrice.textContent = `${price} Kč`;
+        elPrice.classList.add('cart-item-elPrice');
     
         const removeBtn = document.createElement('button');
         removeBtn.classList.add('cart-item-remove');
         removeBtn.onclick = function() {
             cartItem.remove();
-            // Обновляем смещение оставшихся элементов
             updateItemsPosition();
-            updateTotalPrice(); // Предполагается, что у вас есть функция для обновления общей цены
+            updateTotalPrice(); 
+        };
+
+        name.onclick = function() {
+            cartItem.remove();
+            updateItemsPosition();
+            updateTotalPrice(); 
         };
 
         const icon = document.createElement('img');
@@ -64,8 +80,10 @@ document.addEventListener("DOMContentLoaded", function() {
     
         details.appendChild(name);
         details.appendChild(removeBtn);
+        priceDetails.appendChild(elPrice);
         cartItem.appendChild(img);
         cartItem.appendChild(details);
+        cartItem.appendChild(priceDetails)
         
         cartItemsContainer.appendChild(cartItem);
 
@@ -98,10 +116,10 @@ document.addEventListener("DOMContentLoaded", function() {
         let totalPrice = 0;
         const cartItems = document.querySelectorAll('.cart-items .cart-item');
         cartItems.forEach(item => {
-            const price = parseInt(item.dataset.price, 10); // Получаем цену из data-price
+            const price = parseInt(item.dataset.price, 10); 
             totalPrice += price;
         });
-        document.querySelector('#total-price').textContent = `${totalPrice}`; // Обновляем текст общей стоимости
+        document.querySelector('#total-price').textContent = `${totalPrice}`; 
     }
 
 })

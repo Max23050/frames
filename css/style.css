@@ -9,6 +9,10 @@
     margin: 0 auto;
 }
 
+.cart-page {
+    overflow: hidden;
+}
+
 #scrollBlock {
     position: fixed;
     top: -80px;
@@ -115,6 +119,10 @@
     width: 120px;
 }
 
+.header__home:hover .change-color {
+    fill: #2d2d2d;
+}
+
 
 
 .header__information {
@@ -150,6 +158,7 @@
 .header__information-lang {
     font-weight: 400;
     line-height: 20px;
+    cursor: pointer;
 }
 
 .header__title {
@@ -204,6 +213,10 @@
     cursor: pointer;
 }
 
+.benefits__item:hover .benefits__item-title {
+    text-decoration: underline;
+}
+
 .benefits__item-title {
     color: rgb(17, 17, 17);
     font-family: Helvetica;
@@ -231,6 +244,11 @@
     background: rgb(246, 246, 247);
     padding-top: 70px;
     padding-bottom: 77px;
+    cursor: pointer;
+}
+
+.films__wrapper:hover .films__link {
+    text-decoration: underline;
 }
 
 .films__title {
@@ -329,6 +347,11 @@
     border-radius: 5px;
     background: rgb(246, 246, 247);
     display: flex;
+    cursor: pointer;
+}
+
+.mission__wrapper:hover .mission__descr-link {
+    text-decoration: underline;
 }
 
 .mission__descr {
@@ -365,7 +388,7 @@
 
 .development__wrapper {
     cursor: pointer;
-    min-height: 736px;
+    height: 736px;
     background: url('../img/dev-studio-img.jpg') no-repeat 50%/cover;
     padding-top: 80px;
     padding-left: 110px;
@@ -404,7 +427,7 @@
 }
 
 .eco__wrapper {
-    min-height: 720px;
+    height: 720px;
     background: url('../img/eco-img.jpg') no-repeat 50%/cover;
     padding: 76px 0 0 110px;
     position: relative;
@@ -446,6 +469,11 @@
     padding-left: 110px;
     height: 740px;
     position: relative;
+    cursor: pointer;
+}
+
+.saving__wrapper:hover .saving__wrapper-link {
+    text-decoration: underline;
 }
 
 .saving__wrapper-title {
@@ -481,6 +509,19 @@
     position: relative;
     margin-bottom: 20px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.information__elem:hover #frames-info  {
+    text-decoration: underline;
+}
+
+.information__elem:hover #director-info  {
+    text-decoration: underline;
+}
+
+.information__elem:hover #instagram-info  {
+    text-decoration: underline;
 }
 
 .information__elem-title {
@@ -535,8 +576,8 @@
     font-size: 26px;
     font-weight: 700;
     position: absolute;
-    left: 40px;
-    top: 353px;
+    left: 80px;
+    top: 370px;
 }
 
 .types {
@@ -548,6 +589,15 @@
     margin-bottom: 35px;
     border-radius: 5px;
     display: flex;
+    cursor: pointer;
+}
+
+.types__wrapper img {
+    height: 555px;
+}
+
+.types__wrapper:hover .types__wrapper-link {
+    text-decoration: underline;
 }
 
 .types__wrapper-content {
@@ -585,7 +635,6 @@
     font-family: Helvetica;
     font-size: 16px;
     font-weight: 700;
-    margin-top: 455px;
     position: absolute;
     bottom: 0;
     line-height: 15px;
@@ -661,7 +710,7 @@
 }
 
 #eco {
-    background: rgb(240, 247, 240);
+    background: #C4F6B8;
 }
 
 .eco-wrapper {
@@ -670,10 +719,10 @@
 }
 
 .eco-title {
-    color: rgb(0, 0, 0);
+    color: #006C01;
     font-family: Helvetica;
     font-size: 35.65px;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .eco-descr {
@@ -1046,7 +1095,7 @@
     bottom: 0;
     display: flex;
     align-items: center;
-    padding: 0 170px 0 195px;
+    padding: 0 90px 0 195px;
     z-index: 1000;
 }
 
@@ -1069,6 +1118,7 @@
     font-family: Helvetica;
     font-size: 16px;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .fixed-block__price {
@@ -1105,7 +1155,7 @@
 }
 
 .content__cart {
-    height: 70%;
+    height: 50%;
 }
 
 .content__films {
@@ -1115,7 +1165,7 @@
 
 .content__cart-block {
     position: relative;
-    width: 870px;
+    width: 850px;
     height: 100%;
     border-radius: 3.38px;
     background: rgb(246, 246, 246);
@@ -1167,7 +1217,7 @@
 
 .content__delivery {
     display: flex;
-    margin-top: 45px;
+    margin-top: 30px;
     padding-left: 50px;
 }
 
@@ -1317,6 +1367,7 @@
 
 #best-info {
     margin-top: 53px;
+    align-items: end;
 }
 
 .content__films-add {
@@ -1332,6 +1383,11 @@
     font-size: 17px;
     font-weight: 500;
     cursor: pointer;
+    user-select: none;
+}
+
+.content__films-add:hover {
+    background: #2d2d2d;
 }
 
 .cross-out-price {
@@ -1342,7 +1398,6 @@
 .small-price {
     color: rgb(179, 179, 179);
     font-family: Helvetica;
-    font-size: 14px;
     font-weight: 500;
 }
 
@@ -1363,7 +1418,7 @@
 
 .cart-item-image {
     display: block;
-    height: 360px;
+    height: 250px;
     width: auto;
 }
 
@@ -1380,6 +1435,8 @@
     font-size: 17px;
     font-weight: 500;
     margin-right: 5px;
+    user-select: none;
+    cursor: pointer;
 }
 
 .cart-item-remove {
@@ -1389,6 +1446,82 @@
     color: #333; /* Адаптируйте цвет кнопки по необходимости */
     font-size: 16px;
     z-index: 100;
+}
+
+#code {
+    width: 540px;
+    height: 485px;
+    background-color: #fff;
+    padding-top: 120px;
+    padding-left: 100px;
+    position: relative;
+}
+
+.code__btn {
+    display: block;
+    border-radius: 2px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: Helvetica;
+    font-size: 17px;
+    font-weight: 500;
+    width: 157px;
+    height: 39px;
+    margin-top: 25px;
+}
+
+.code__form label {
+    display: block;
+    color: rgb(39, 39, 39);
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#discount-code {
+    border-radius: 2px;
+    background: rgb(243, 243, 243); 
+    width: 340px;
+    height: 49px;
+    border: none;
+    margin-top: 25px;
+}
+.code__descr {
+    position: absolute;
+    bottom: 20px;
+    color: rgb(39, 39, 39);
+    font-family: Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
 }
 
 
@@ -1420,6 +1553,165 @@
 
     .benefits__item {
         width: 360px;
+    }
+
+    .content__cart-block {
+        width: 680px;
+    }
+
+    .content__films-elem {
+        width: 380px;
+        height: 175px;  
+        padding-right: 18px;
+        padding-left: 20px;
+    }
+
+    .content__films-add {
+        width: 100px;
+        height: 32px;  
+        font-size: 15px; 
+    }
+
+    .content__films-info:nth-child(2n) {
+        margin-top: 50px;
+    }
+
+    .content__films-img img {
+        height: 125px;
+    }
+
+    .content__films-best {
+        margin-top: 6px;
+    }
+
+    #best-info {
+        margin-top: 15px;
+    }
+
+    .content__films-text {
+        font-size: 17px;
+    }
+
+    .content__films-btn {
+        font-size: 14px;
+    }
+
+    .content__films-price {
+        font-size: 17px;
+    }
+
+    .content__films-best {
+        width: 116.5px;
+        height: 24.99px;    
+        font-size: 12.5px;
+    }
+
+    .cart-item-image {
+        height: 220px;
+    }
+
+    .header__button {
+        width: 239px;
+        height: 45px; 
+        font-size: 19px;   
+    }
+
+    .development__wrapper {
+        height: 500px;
+        padding-top: 60px;
+    }
+
+    .development__wrapper-descr {
+        font-size: 23px;
+        margin-top: 112px;
+    }
+
+    .development__wrapper-link {
+        font-size: 15px;
+        margin-top: 139px;
+    }
+
+    .eco__wrapper {
+        height: 500px;
+        padding-top: 60px;
+    }
+
+    .eco__wrapper-link {
+        font-size: 15px;
+    }
+
+    .saving__wrapper {
+        height: 500px;
+        padding-top: 90px;
+    }
+
+    .saving__wrapper-link {
+        font-size: 15px;
+    }
+
+    .information__elem {
+        width: 554px;
+        height: 500px;
+    }
+
+    #frames-info, #instagram-info {
+        top: 265px;
+        font-size: 24px;
+    }
+
+    .types__wrapper {
+        height: 500px;
+        padding: 50px 0 70px 130px;
+    }
+
+    .types__wrapper img {
+        height: 384px;
+    }
+
+    .types__wrapper-content {
+        font-size: 24px;
+    }
+
+    .types__wrapper-link {
+        font-size: 15px;
+    }
+
+    .mission__wrapper {
+        height: 500px;
+    }
+
+    .mission__photo {
+        overflow: hidden;
+    }
+
+    .mission__descr {
+        font-size: 24px;
+    }
+
+    .mission__descr-link {
+        font-size: 16px;
+    }
+
+    .films__wrapper {
+        height: 500px;
+        padding-top: 60px;
+    }
+
+    .films__container {
+        margin-top: 60px;
+    }
+
+    .films__container-elem {
+        width: 240px;
+        height: 245px;
+    }
+
+    .films__title {
+        font-size: 24px;
+    }
+
+    .films__link {
+        margin-top: 40px;
     }
 }
 

@@ -1468,6 +1468,11 @@
     width: 157px;
     height: 39px;
     margin-top: 25px;
+    border: none;
+}
+
+.code__btn:hover {
+    background-color: #2d2d2d;
 }
 
 .code__form label {

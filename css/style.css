@@ -2151,9 +2151,10 @@
         font-size: 19px;
     }
 
-    html {
+    html, body {
         overflow-x: hidden;
     }
+    
     
 }
 

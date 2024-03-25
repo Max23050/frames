@@ -35,7 +35,6 @@
     width: 100%;
     z-index: 5000;
     background-color:rgb(0, 0, 0);
-    display: flex;
     align-items: center;
 }
 
@@ -1996,7 +1995,10 @@
 
     #scrollBlock-mobile {
         display: flex;
+        left: 0;
+        width: 100vw;
     }
+
 
     .benefits__wrapper {
         flex-direction: column;
@@ -2116,11 +2118,37 @@
         padding-top: 35px;
         padding-left: 0;
         justify-content: space-between;
+        position: relative;
+        padding-bottom: 90px;
     }
 
     .types__wrapper-content {
         margin: 0 auto;
         font-size: 21px;
+        position: static;
+    }
+
+    .types__wrapper-link {
+        position: absolute;
+        bottom: 36px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .scroll-content {
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 15px;
+    }
+
+    .scroll-link {
+        font-size: 15px;
+    }
+
+    .scroll-btn {
+        width: 206.62px;
+        height: 42.5px;
+        font-size: 19px;
     }
     
 }

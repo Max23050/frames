@@ -1541,6 +1541,10 @@
     animation: fadeIn 0.5s ease-out;
 }
 
+.mobile-delivery-block {
+    display: none;
+}
+
 
 /* @media (max-width: 1799px) {
     .promo__delivery-content {
@@ -1945,7 +1949,7 @@
         font-size: 30px;
     }
 
-    .promo__delivery {
+    .promo__delivery-content {
         display: none;
     }
 
@@ -1968,6 +1972,7 @@
     .header__content {
         padding-left: 25px;
         padding-right: 25px;
+        padding-top: 3vh;
     }
 
     .header__logo img {
@@ -1976,7 +1981,7 @@
 
     .header__information-icon img {
         height: 23px;
-         width: 23px;
+        width: 23px;
     }
 
     .header__information-lang {
@@ -1990,13 +1995,21 @@
     .header__title {
         width: 275px;
         font-size: 35px;
-        padding-top: 23vh;
+        padding-top: 30vh;
     }
 
     #scrollBlock-mobile {
         display: flex;
         left: 0;
         width: 100vw;
+    }
+
+    .films {
+        padding-top: 30px;
+    }
+
+    .benefits {
+        padding-top: 25px;
     }
 
 
@@ -2155,6 +2168,37 @@
         overflow-x: hidden;
     }
     
+    .mobile-delivery-block {
+        display: flex;
+        border-radius: 5px;
+        background: rgb(0, 0, 0);
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 17px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+
+    .mobile-delivery__descr {
+        color: rgb(255, 255, 255);
+        font-family: Helvetica;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .mobile-delivery__link {
+        color: rgb(255, 255, 255);
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+
+    .mobile-delivery__icon {
+        margin-right: 20px;
+    }
     
 }
 

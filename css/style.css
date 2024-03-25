@@ -2150,6 +2150,10 @@
         height: 42.5px;
         font-size: 19px;
     }
+
+    html {
+        overflow-x: hidden;
+    }
     
 }
 

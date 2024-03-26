@@ -1760,6 +1760,10 @@
     .container {
         width: 960px;
     }
+
+    .content__cart-block {
+        width: 550px;
+    }
     
     .benefits__item {
         width: 300px;
@@ -2206,6 +2210,68 @@
     .mobile-delivery__icon {
         margin-right: 20px;
     }
+
+    .content__wrapper {
+        flex-direction: column;
+    }
+
+    .content__cart-block {
+        width: 100%;
+    }
+
+    .content__cart-title {
+        display: none;
+    }
+
+    .content {
+        padding-top: 0;
+    }
+
+    .header-cart {
+        background: rgb(246, 246, 246);
+    }
+
+    #cart-header-content {
+        padding: 15px 25px 0 25px;
+    }
+
+    .header__home {
+        display: none;
+    }
+
+    .content__delivery {
+        display: none;
+    }
+
+    .content__cart-block {
+        height: 400px;
+    }
+
+    .content__films {
+        margin-top: 90px;
+    }
+
+    .content__films-elem {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+    }
+
+    .content__films-info {
+        width: 182px;
+    }
     
+    .content__films-img img {
+        height: 120px;
+    }
+
+    .fixed-block {
+        padding: 0 5px;
+    }
+
+    .fixed-block__order {
+        width: 252px;
+    }
 }
 

@@ -719,6 +719,13 @@
     max-height: 90vh; 
     overflow-y: auto; 
     display: none;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
 }
 
 #eco {

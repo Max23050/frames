@@ -2245,11 +2245,11 @@
 
     .content__cart-block {
         /* height: 400px; */
-        height: 60vh;
+        height: 50vh;
     }
 
     .content__films {
-        margin-top: 70px;
+        margin-top: 50px;
     }
 
     .content__films-elem {

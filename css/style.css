@@ -2287,7 +2287,7 @@
         padding-bottom: 150px;
     }
 
-    html {
+    .no-scroll {
         overflow: hidden;
     }
     

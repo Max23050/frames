@@ -1552,6 +1552,10 @@
     display: none;
 }
 
+.content__films-container {
+    padding-bottom: 200px;
+}
+
 
 /* @media (max-width: 1799px) {
     .promo__delivery-content {
@@ -2278,5 +2282,14 @@
     .content__films-title {
         margin-left: 20px;
     }
+
+    .content__films-container {
+        padding-bottom: 100px;
+    }
+
+    html {
+        overflow: hidden;
+    }
+    
 }
 

@@ -2556,7 +2556,7 @@
     }
 
     .content__films-container {
-        padding-bottom: 150px;
+        padding-bottom: 170px;
     }
 
     .no-scroll {
@@ -2568,7 +2568,7 @@
     }
 
     .instruction-title {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .instuction-img {
@@ -2581,7 +2581,7 @@
 
     .instruction-descr {
         margin-top: 35px;
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .instruction-content {
@@ -2591,7 +2591,7 @@
     }
 
     .instruction-text {
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .instruction-addition {
@@ -2743,6 +2743,10 @@
 
     #discount-code {
         width: 250px;
+    }
+
+    .responsive-br {
+        display: none;
     }
 
 }

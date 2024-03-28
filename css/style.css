@@ -287,6 +287,10 @@
     color: white;
 }
 
+.films__container img {
+    height: 391px;
+}
+
 .film-title, .films__container-title {
     font-family: Space-Grotesk;
     font-size: 17.07px;
@@ -710,6 +714,10 @@
     cursor: pointer;
 }
 
+.close-icon img {
+    height: 25px;
+}
+
 .modal {
     position: relative;
     width: 1130px;
@@ -740,7 +748,7 @@
 .eco-title {
     color: #006C01;
     font-family: Helvetica;
-    font-size: 35.65px;
+    font-size: 29px;
     font-weight: bold;
 }
 
@@ -791,7 +799,7 @@
 .eco-elem-title {
     color: rgb(13, 200, 32);
     font-family: Helvetica;
-    font-size: 23.45px;
+    font-size: 22px;
     font-weight: 700;
     margin-top: 25px;
 }
@@ -799,7 +807,7 @@
 .eco-elem-descr {
     color: rgb(13, 200, 32);
     font-family: Helvetica;
-    font-size: 16.89px;
+    font-size: 16px;
     font-weight: 400;
     margin-top: 25px;
 }
@@ -823,7 +831,7 @@
 .developing-studio-title {
     color: rgb(255, 255, 255);
     font-family: Helvetica;
-    font-size: 34.93px;
+    font-size: 29px;
     font-weight: 400;
     margin-top: 80px;
 }
@@ -839,7 +847,7 @@
 .developing-studio-descr {
     color: rgb(255, 255, 255);
     font-family: Helvetica;
-    font-size: 34.93px;
+    font-size: 28px;
     font-weight: 400;
     margin-top: 100px;
 }
@@ -860,14 +868,14 @@
 .developing-studio-options-title {
     color: rgb(255, 255, 255);
     font-family: Helvetica;
-    font-size: 22.98px;
+    font-size: 21px;
     font-weight: 400;
 }
 
 .developing-studio-options-descr {
     color: rgb(255, 255, 255);
     font-family: Helvetica;
-    font-size: 16.55px;
+    font-size: 16px;
     font-weight: 400;
     margin-top: 65px;
     position: absolute;
@@ -885,7 +893,7 @@
 .developing-studio-packeta-descr {
     color: rgb(255, 255, 255);
     font-family: Helvetica;
-    font-size: 23px;
+    font-size: 21px;
     font-weight: 400;
 }
 
@@ -903,7 +911,7 @@
     margin-top: 75px;
     color: rgb(255, 255, 255);
     font-family: Helvetica;
-    font-size: 22.98px;
+    font-size: 21px;
     font-weight: 400;
 }
 
@@ -919,12 +927,13 @@
 .goal-wrapper {
     width: 787px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .goal-title {
     color: rgb(0, 0, 0);
     font-family: Helvetica;
-    font-size: 34.93px;
+    font-size: 29px;
     font-weight: 400;
 }
 
@@ -932,14 +941,14 @@
     margin-top: 60px;
     color: rgb(0, 0, 0);
     font-family: Helvetica;
-    font-size: 23px;
+    font-size: 21px;
     font-weight: 700;
 }
 
 .goal-phone, .goal-phone a {
     color: rgb(0, 0, 0);
     font-family: Helvetica;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 400;
     margin-top: 60px;
 }
@@ -965,7 +974,7 @@
 .films-title {
     color: rgb(0, 0, 0);
     font-family: Helvetica;
-    font-size: 34.93px;
+    font-size: 29px;
     font-weight: 400;
 }
 
@@ -979,7 +988,7 @@
 .films-descr {
     color: rgb(0, 0, 0);
     font-family: Helvetica;
-    font-size: 23px;
+    font-size: 21px;
     font-weight: 400;
     margin-top: 80px;
 }
@@ -987,9 +996,16 @@
 .films-example {
     color: rgb(0, 0, 0);
     font-family: Helvetica;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
     margin-top: 55px;
+}
+
+.films-modal-img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    height: 415px;
 }
 
 .films-images {
@@ -1758,6 +1774,100 @@
     .saving__wrapper-title {
         font-size: 24px;
     }
+
+    .instruction-title {
+        font-size: 27px;
+    }
+
+    .instuction-img {
+        height: 260px;
+    }
+
+    .instruction-content {
+        padding-bottom: 28px;
+    }
+
+    .instruction-descr {
+        margin-top: 50px;
+        font-size: 15px;
+    }
+
+    .descr-1 {
+        margin-top: 80px;
+    }
+
+    .instruction-text {
+        font-size: 21px;
+    }
+
+    .instruction-addition {
+        font-size: 15px;
+    }
+
+    .eco-elem-img {
+        height: 260px;
+    }
+
+    .eco-elem-title {
+        margin-top: 0;
+    }
+
+    .eco-elem-descr {
+        margin-top: 50px;
+    }
+
+    .eco-elem-content {
+        padding-bottom: 42px;
+    }
+
+    .developing-studio-title {
+        font-size: 26px;
+    }
+
+    .developing-studio-descr {
+        font-size: 22px;
+        margin-top: 75px;
+    }
+
+    .developing-studio-options {
+        margin-top: 60px;
+    }
+
+    .developing-studio-packeta-descr {
+        font-size: 20px;
+    }
+
+    .developing-studio-packeta-link {
+        font-size: 15px;
+    }
+
+    .developing-studio-text {
+        font-size: 20px;
+    }
+
+    .goal-title {
+        font-size: 26px;
+    }
+
+    .goal-descr {
+        font-size: 19px;
+    }
+    
+    .goal-phone {
+        font-size: 20px;
+    }
+
+    .films-title {
+        font-size: 26px;
+    }
+
+    .films-descr {
+        font-size: 20px;
+    }
+
+    .films-example {
+        font-size: 21px;
+    }
 }
 
 @media (max-width: 1279px) {
@@ -1853,6 +1963,10 @@
 
     .scroll-content {
         width: 970px;
+    }
+
+    .modal {
+        width: 90%;
     }
 }
 
@@ -1977,6 +2091,164 @@
         width: 275px;
     }
     
+    .instruction-wrapper {
+        width: 600px;
+    }
+
+    .instruction-title {
+        font-size: 25px;
+    }
+
+    .instruction-elem {
+        width: 100%;
+    }
+
+    .instruction-content {
+        padding-left: 25px;
+    }
+
+    .instruction-text {
+        font-size: 18px;
+    }
+
+    .instruction-descr {
+        font-size: 13px;
+        margin-top: 39px;
+    }
+
+    .instuction-img {
+        height: 240px;
+    }
+
+    .descr-1 {
+        margin-top: 70px;
+    }
+
+    .instruction-addition {
+        font-size: 12px;
+    }
+
+    .eco-wrapper {
+        width: 600px;
+    }
+
+    .eco-title {
+        font-size: 26px;
+    }
+
+    .eco-elem-content {
+        padding-left: 25px;
+        padding-bottom: 30px;
+    }
+
+    .eco-elem-img {
+        height: 240px;
+    }
+
+    .eco-elem-title {
+        font-size: 21px;
+    }
+
+    .eco-elem-descr {
+        font-size: 15px;
+    }
+
+    .quality-wrapper {
+        width: 100%;
+    }
+
+    .quality-title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .quality-img {
+        width: 100%;
+    }
+
+    .developing-studio-wrapper {
+        width: 600px;
+    }
+
+    .developing-studio-title {
+        font-size: 25px;
+    }
+    
+    .developing-studio-descr {
+        font-size: 21px;
+    }
+
+    .developing-studio-packeta {
+        font-size: 19px;
+    }
+
+    .developing-studio-text {
+        font-size: 19px;
+    }
+
+    .goal-wrapper {
+        width: 600px;
+    }
+
+    .goal-title {
+        font-size: 25px;
+    }
+
+    .goal-descr {
+        font-size: 18px;
+    }
+
+    .goal-phone {
+        font-size: 19px;
+    }
+
+    .goal-img {
+        width: 100%;
+    }
+
+    .films-wrapper {
+        width: 600px;
+    }
+
+    .films-title {
+        font-size: 25px;
+    }
+
+    .films-modal-img {
+        height: 400px;
+    }
+
+    .films-descr {
+        font-size: 19px;
+    }
+
+    .films-example {
+        font-size: 20px;
+    }
+
+    .films-img {
+        width: 100%;
+    }
+
+    .content__delivery {
+        display: none;
+    }
+
+    .content__wrapper {
+        flex-direction: column;
+    }
+
+    .content__cart-block {
+        width: 100%;
+    }
+
+    .content__films {
+        margin-top: 65px;
+    }
+
+    .fixed-block {
+        padding: 0px 50px 0 50px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -2290,6 +2562,182 @@
     .no-scroll {
         overflow: hidden;
     }
+
+    .instruction-wrapper {
+        width: 255px;
+    }
+
+    .instruction-title {
+        font-size: 17px;
+    }
+
+    .instuction-img {
+        height: 200px;
+    }
+
+    .instruction-elem {
+        flex-direction: column-reverse;
+    }
+
+    .instruction-descr {
+        margin-top: 35px;
+        font-size: 15px;
+    }
+
+    .instruction-content {
+        padding-top: 30px;
+    }
+
+    .instruction-addition {
+        font-size: 14px;
+    }
     
+    .eco-wrapper {
+        width: 255px;
+    }
+
+    .eco-title {
+        font-size: 17px;
+    }
+
+    .eco-block {
+         margin-top: 45px;
+    }
+
+    .eco-elem-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .eco-elem-img {
+        height: 200px;
+    }
+
+    .eco-elem-title {
+        font-size: 18px;
+    }
+
+    .eco-elem-descr {
+        font-size: 13px;
+        margin-top: 30px;
+    }
+
+    .quality-title {
+        font-size: 20px;
+    }
+
+    .developing-studio-wrapper {
+        width: 255px;
+    }
+
+    .developing-studio-title {
+        font-size: 20px;
+        margin-top: 45px;
+    }
+
+    .developing-studio-descr {
+        font-size: 17px;
+    }
+
+
+    .developing-studio-options {
+        flex-direction: column-reverse;
+    }
+
+    .developing-studio-options-img img {
+        width: 100%;
+    }
+
+    .developing-studio-options-descr {
+        position: static;
+    }
+
+    .developing-studio-options-content {
+        padding-left: 25px;
+    }
+
+    .developing-studio-options-title {
+        font-size: 20px;
+    }
+
+    .developing-studio-options-descr {
+        font-size: 14px;
+    }
+
+    .developing-studio-packeta-link {
+        position: static;
+        margin-top: 25px;
+    }
+
+    .developing-studio-packeta-descr {
+        font-size: 16px;
+    }
+
+    .developing-studio-packeta {
+        padding-right: 15px;
+        padding-bottom: 45px;
+    }
+
+    .developing-studio-text {
+        font-size: 17px;
+    }
+
+    .goal-wrapper {
+        width: 255px;
+    }
+
+    .goal-title {
+        font-size: 21px;
+    }
+
+    .goal-descr {
+        margin-top: 45px;
+        font-size: 16px;
+    }
+
+    .goal-phone {
+        margin-top: 45px;
+        font-size: 16px;
+    }
+
+    .goal-phone a {
+        font-size: 16px;
+    }
+
+    .films-wrapper {
+        width: 255px;
+    }
+
+    .films-title {
+        font-size: 23px;
+    }
+
+    .films-modal-img {
+        height: 335px;
+        margin-top: 45px;
+    }
+
+    .films-descr {
+        font-size: 17px;
+        margin-top: 50px;
+    }
+
+    .films-example {
+        font-size: 18px;
+        margin-top: 45px;
+    }
+
+    .films-images {
+        margin-top: 35px;
+    }
+
+    #code {
+        width: 90%;
+        padding-left: 40px;
+    }
+
+    #discount-code {
+        width: 250px;
+    }
+
 }
 
